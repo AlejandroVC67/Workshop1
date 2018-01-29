@@ -1,0 +1,22 @@
+.landing{
+	background-color: yellow;
+	width: 100vw;
+	height: 100vh;
+	margin-left: 30vw;
+	justify-content: center;
+	align-items: center;
+	@include medium {
+		margin-left:45vw;
+	}
+	&__title{
+		top: 0;
+		font-size: 35px;
+	}
+	&__list{
+		margin-top: 50vh;
+		a {
+			font-size: 30px;
+		}
+	}
+
+}
