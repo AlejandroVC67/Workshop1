@@ -40,6 +40,18 @@ module.exports = {
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
       template: './src/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'cv.html',
+      template: './src/CV/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'Gallery.html',
+      template: './src/Gallery/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'Hobbies.html',
+      template: './src/Hobbies/index.html'
     })
   ]
 }
