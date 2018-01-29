@@ -1,0 +1,22 @@
+{
+  "name": "workshop1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroVC67/Workshop1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandroVC67/Workshop1/issues"
+  },
+  "homepage": "https://github.com/AlejandroVC67/Workshop1#readme",
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
+  }
+}
