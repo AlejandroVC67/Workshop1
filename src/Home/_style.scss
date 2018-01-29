@@ -1,21 +1,20 @@
 .landing{
-	background-color: yellow;
+	background-color: #0cc9f8;
 	width: 100vw;
 	height: 100vh;
-	margin-left: 30vw;
+	display: grid;
 	justify-content: center;
 	align-items: center;
-	@include medium {
-		margin-left:45vw;
-	}
 	&__title{
 		top: 0;
 		font-size: 35px;
 	}
 	&__list{
-		margin-top: 50vh;
-		a {
+		a{
 			font-size: 30px;
+			&:hover{
+				color: white;
+			}
 		}
 	}
 
