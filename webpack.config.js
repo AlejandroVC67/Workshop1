@@ -4,11 +4,12 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: {'galleryBundle.js': './src/Gallery/main.js',
+    'hobbiesBundle.js': './src/Hobbies/main.js'},
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: './[name]'
   },
   module: {
 
@@ -39,19 +40,23 @@ module.exports = {
     }),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      chunks: null
     }),
     new HtmlWebpackPlugin({
       filename: 'cv.html',
-      template: './src/CV/index.html'
+      template: './src/CV/index.html',
+      chunks: null
     }),
     new HtmlWebpackPlugin({
       filename: 'Gallery.html',
-      template: './src/Gallery/index.html'
+      template: './src/Gallery/index.html',
+      chunks: ['galleryBundle.js']
     }),
     new HtmlWebpackPlugin({
       filename: 'Hobbies.html',
-      template: './src/Hobbies/index.html'
+      template: './src/Hobbies/index.html',
+      chunks: ['hobbiesBundle.js']
     })
   ]
 }

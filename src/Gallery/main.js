@@ -1,4 +1,4 @@
-
+import styles from '../main.scss'
 import { Gallery } from './gallery.js'
 import data from './gallerySource.js'
 
