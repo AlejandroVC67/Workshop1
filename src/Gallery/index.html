@@ -7,17 +7,17 @@
 	<title>GALLERY</title>
 </head>
 <body>
-	<div class="gallery">
-		<div class="gallery__arrows-container" tabindex="0">
-			<button>
-				<img src="arrow-left.svg" alt="Left arrow" class="gallery__arrows-container--left">
+	<div class="gallery" tabindex="0">
+		<div class="gallery__arrows-container">
+			<button data-use="navegation">
+				<img src="arrow-left.svg" alt="Left arrow" class="gallery__arrows-container__left">
 			</button>
-			<button>
-				<img src="arrow-right.svg" alt="Right arrow" class="gallery__arrows-container--right">
+			<button data-use="navegation">
+				<img src="arrow-right.svg" alt="Right arrow" class="gallery__arrows-container__right">
 			</button>
 		</div>
 		<ul class="gallery__image-container"></ul>
-		<ul class="gallery__dots"></ul>
+		<ul class="gallery__dots-list"></ul>
 	</div>
 </body>
 </html>
