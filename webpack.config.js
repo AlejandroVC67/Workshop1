@@ -40,13 +40,15 @@ module.exports = {
     }),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      chunks: null
+      template: './src/index.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'cv.html',
-      template: './src/CV/index.html',
-      chunks: null
+      template: './src/gridExercise/index.html',
+      filename: 'grid.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/gridExercise/information.html',
+      filename: 'gridInformation.html'
     }),
     new HtmlWebpackPlugin({
       filename: 'Gallery.html',

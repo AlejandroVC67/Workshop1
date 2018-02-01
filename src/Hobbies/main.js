@@ -1,4 +1,7 @@
+/* eslint-disable */
 import styles from '../main.scss'
+/* eslint-enable */
+
 import seriesData from './seriesSource.js'
 import { Categories } from './filter.js'
 import { Grid } from './grid.js'
@@ -17,8 +20,7 @@ DataRetriever.get(URL, (data) => {
   function onChange (currentCategory) {
     grid.updateGrid(currentCategory)
   }
-  new Categories(document.querySelector('.filter__list'), categories, onChange)
-})
-
-/* eslint-disable */
+/* eslint-disable */  
+new Categories(document.querySelector('.filter__list'), categories, onChange)
 /* eslint-enable */
+})
